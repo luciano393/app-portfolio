@@ -1,0 +1,41 @@
+.Home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 100vh;
+    .HomeWrapper {
+        margin-top: 2rem;
+        text-align: center;
+        position: relative;
+        img {
+            height: 20rem;
+            width: 20rem;
+            border-radius: 50%;
+            object-fit: cover;
+            border: .4rem solid $main-color;
+            box-shadow: $box-shadow;
+        }
+        h3 {
+            font-size: 3rem;
+            color: $text-color;
+            text-transform: uppercase;
+            text-shadow: $box-shadow;
+            span {
+                color: $main-color;
+                text-transform: uppercase;
+                text-shadow: $box-shadow;
+            }
+        }
+        p {
+            color: $text-color;
+            font-size: 2rem;
+            line-height: 2;
+            span {
+                color: $main-color;
+                text-transform: uppercase;
+                text-shadow: $box-shadow;
+            }
+        }
+    }
+}

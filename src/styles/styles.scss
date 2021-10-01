@@ -1,0 +1,11 @@
+// Parametros globales
+@import './base/base';
+@import './base/settings';
+
+// Components
+@import './components/Navbar';
+@import './components/Footer';
+@import './components/Home';
+
+// Pages
+@import '../styles/pages/Main';

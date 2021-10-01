@@ -1,0 +1,25 @@
+.NavbarWrapper {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    z-index: 1000;
+    box-shadow: 0 .5rem .5rem rgba(0,0,0,.5);
+    .Navbar {
+        display: flex;
+        font-size: 1.5rem;
+        font-weight: 600;
+        .Navbar__item {
+            padding: 1.5rem;
+            width: auto;
+            color: #fff;
+            &:hover {
+                color: #d3d3d3;
+                background: $main-color;
+            }
+        }
+    }
+}
