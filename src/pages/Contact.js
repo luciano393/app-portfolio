@@ -3,12 +3,12 @@ import { Footer } from '../components/Footer'
 import { Heading } from '../components/Heading'
 import { Navbar } from '../components/Navbar'
 
-export const Portfolio = () => {
+export const Contact = () => {
     return (
         <div>
             <Navbar />
-            <section className="Portfolio">
-                <Heading text="My" span="Portfolio"/>
+            <section className="Contact">
+                <Heading text="Contact" span="Me"/>
             </section>
             <Footer />
         </div>

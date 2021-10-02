@@ -2,23 +2,33 @@
     display: flex;
     width: 100%;
     background-color: #111;
-    justify-content: flex-start;
-    padding-left: 5rem;
+    justify-content: center;
     li {
         display: flex;
         flex-direction: column;
         margin: 3rem 5rem;
         color: #d3d3d3;
         h6 {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             margin-bottom: .3rem;
         }
         .Footer__item {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             color: #d3d3d3;
             margin-bottom: .3rem;
+            cursor: pointer;
             &:hover {
                 color: $main-color;
+            }
+        }
+        .social {
+            .icon {
+                color: #d3d3d3;
+                margin: .5rem .5rem;
+                font-size: 2rem;
+                &:hover {
+                    color: $main-color;
+                }
             }
         }
     }

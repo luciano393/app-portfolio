@@ -5,6 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    border: none;
+    outline: none;
 }
 
 body {
@@ -18,8 +20,14 @@ html::-webkit-scrollbar{
     width: .7rem;
 }
 html::-webkit-scrollbar-track{
-    background: #fff;
+    background: #838383;
 }
 html::-webkit-scrollbar-thumb{
     background: #8a1542;
+    border-radius: 1rem;
+}
+section {
+    padding: 5.5rem 7%;
+    min-height: 80vh;
+    width: 100%;
 }

@@ -1,0 +1,13 @@
+.Heading {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 3.3rem;
+    text-transform: uppercase;
+    color: $grey;
+    text-shadow: $box-shadow;
+    span {
+        text-transform: uppercase;
+        color: $main-color;
+        text-shadow: $box-shadow;
+    }
+}
