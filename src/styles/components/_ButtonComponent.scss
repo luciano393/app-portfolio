@@ -8,6 +8,7 @@
     box-shadow: .2rem;
     box-shadow: $box-shadow;
     transition: $transition;
+    font-weight: 600;
     &:hover {
         letter-spacing: .2rem;
     }
@@ -17,5 +18,14 @@
     background-color: $grey;
     &:hover {
         background: $main-color;
+    }
+}
+.success {
+    color: $white;
+    border: 1px solid $white;
+    background-color: $text-color;
+    &:hover {
+        background: $white;
+        color: $text-color;
     }
 }

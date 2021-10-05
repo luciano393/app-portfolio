@@ -12,6 +12,7 @@
             background: $bg-section;
             color: $grey;
             margin: 0 .5rem;
+            transition: $transition;
             &:hover {
                 box-shadow: $box-shadow;
                 color: $main-color;

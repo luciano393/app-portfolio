@@ -1,0 +1,39 @@
+.ProjectContent {
+    border-radius: .5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    transition: $transition;
+    &:hover {
+        .content {
+            left: 0;
+        }
+    }
+    .content {
+        height: 100%;
+        width: 100%;
+        padding: 2rem 1rem;
+        top: 0;
+        left: 100%;
+        text-align: center;
+        opacity: .9;
+        cursor: pointer;
+        h3 {
+            font-size: 2.6rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.6rem;
+            padding: 0 5rem;
+        }
+    }
+    .content-images {
+        display: flex;
+        margin-bottom: 2rem;
+        justify-content: space-around;
+        img {
+            border-radius: 1rem;
+        }
+    }
+}
