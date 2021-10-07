@@ -1,7 +1,5 @@
-import React from 'react'
-import { Footer } from '../components/Footer'
-import { Heading } from '../components/Heading'
-import { Navbar } from '../components/Navbar'
+import React from 'react';
+import { Heading } from '../components/Heading';
 import { ProjectContent } from '../components/ProjectContent';
 
 import imageOne from '../assets/images/GetStartedMobile.png';
@@ -11,7 +9,6 @@ import imageTwo from '../assets/images/MainMobile.png';
 export const Portfolio = () => {
     return (
         <div>
-            <Navbar />
             <section className="Portfolio">
                 <Heading text="My" span="Portfolio"/>
                 <div className="box-container">
@@ -23,7 +20,6 @@ export const Portfolio = () => {
                     />
                 </div>
             </section>
-            <Footer />
         </div>
     )
 }

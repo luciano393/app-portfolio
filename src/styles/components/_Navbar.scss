@@ -2,24 +2,51 @@
     position: fixed;
     top: 0; left: 0; right: 0;
     width: 100%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #222;
+    height: 100vh;
     z-index: 1000;
-    box-shadow: 0 .5rem .5rem rgba(0,0,0,.5);
     transition: all $transition;
+    .hamburger-btn {
+        background-color: $main-color;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        border-radius: .5rem;
+        border: 2px solid $text-color;
+    }
     .Navbar {
         display: flex;
-        font-size: 1.3rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        font-size: 2.5rem;
         font-weight: 600;
+        height: 100%;
+        width: 100%;
+        background-color: #222;
         .Navbar__item {
+            display: block;
             padding: 1.5rem;
-            width: auto;
+            width: 100%;
             color: #fff;
+            border-radius: .5rem;
             &:hover {
                 color: #d3d3d3;
                 background: $main-color;
+            }
+        }
+    }
+    @media (min-width:780px) {
+        height: auto;
+        .hamburger-btn {
+            display: none;
+        }
+        .Navbar {
+            flex-direction: row;
+            font-size: 1.3rem;
+            .Navbar__item {
+                border-radius: 0;
+                width: auto;
             }
         }
     }

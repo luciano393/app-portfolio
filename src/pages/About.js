@@ -1,12 +1,10 @@
-import React from 'react'
-import { Footer } from '../components/Footer'
-import { Heading } from '../components/Heading'
-import { Navbar } from '../components/Navbar'
+import React from 'react';
+import { Heading } from '../components/Heading';
+
 
 export const About = () => {
     return (
         <div>
-            <Navbar />
             <section className="About">
                 <Heading text="About" span="Me"/>
                 <div className="box-container">
@@ -15,7 +13,6 @@ export const About = () => {
                     <p>I have knowledge of Mongo DB, Express js, Node js, and React js. </p>
                 </div>
             </section>
-            <Footer />
         </div>
     )
 }

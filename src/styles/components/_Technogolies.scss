@@ -3,21 +3,29 @@
         display: flex;
         flex-wrap: wrap;
         gap: 2rem;
+        margin: 2rem auto;
         .icons {
-            width: 13rem;
-            height: 13rem;
-            padding: 2rem;
+            width: 4rem;
+            height: 4rem;
+            padding: .5rem;
             box-shadow: $box-shadow;
             border-radius: .5rem;
             background: $bg-section;
             color: $grey;
-            margin: 0 .5rem;
             transition: $transition;
             &:hover {
                 box-shadow: $box-shadow;
                 color: $main-color;
                 background: rgba(250,250,250,.6);
                 transform: scale(1.1);
+            }
+        }
+        @media(min-width:680px) {
+            gap: .5rem;
+            .icons {
+                width: 13rem;
+                height: 13rem;
+                padding: 2rem;
             }
         }
     }

@@ -1,5 +1,4 @@
 .ProjectContent {
-    border-radius: .5rem;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -13,27 +12,46 @@
     .content {
         height: 100%;
         width: 100%;
-        padding: 2rem 1rem;
-        top: 0;
-        left: 100%;
+        padding: 1rem;
         text-align: center;
         opacity: .9;
         cursor: pointer;
         h3 {
-            font-size: 2.6rem;
+            font-size: 2rem;
             margin-bottom: 1rem;
         }
         p {
-            font-size: 1.6rem;
-            padding: 0 5rem;
+            font-size: 1.3rem;
+            padding: 0 2.5rem;
         }
+        @media (min-width: 780px) {
+            padding: 2rem 1rem;
+            h3 {
+                font-size: 2.6rem;
+            }
+            p {
+                font-size: 1.6rem;
+                padding: 0 5rem;
+            }
+        } 
     }
     .content-images {
         display: flex;
+        flex-direction: column;
         margin-bottom: 2rem;
         justify-content: space-around;
+        padding: 1rem;
         img {
+            width: 75%;
             border-radius: 1rem;
+            margin: 1rem auto;
+        }
+        @media (min-width:640px) {
+            flex-direction: row;
+            padding: 0;
+            img {
+                margin: .5rem;
+            }
         }
     }
 }

@@ -3,10 +3,12 @@
     width: 100%;
     background-color: #111;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
     li {
         display: flex;
         flex-direction: column;
-        margin: 3rem 5rem;
+        margin: 1rem 2rem;
         color: #d3d3d3;
         h6 {
             font-size: 1.6rem;
@@ -31,5 +33,9 @@
                 }
             }
         }
+    }
+    @media (min-width:780px) {
+        flex-direction: row;
+        padding: 2rem;
     }
 }

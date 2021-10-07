@@ -1,17 +1,14 @@
-import { faDesktop, faMobile } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { Footer } from '../components/Footer'
-import { Heading } from '../components/Heading'
-import { Navbar } from '../components/Navbar'
-import { Technologies } from '../components/Technologies'
+import { faDesktop, faMobile } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Heading } from '../components/Heading';
+import { Technologies } from '../components/Technologies';
 import { ButtonComponent} from '../components/ButtonComponent';
 
 export const Skills = () => {
     return (
         <div>
-            <Navbar />
             <section className="Skills">
                 <Heading text="My" span="Skills"/>
                 <div className="box-container">
@@ -32,7 +29,6 @@ export const Skills = () => {
                 </div>
                 <Technologies />
             </section>
-            <Footer />
         </div>
     )
 }

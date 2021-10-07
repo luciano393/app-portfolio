@@ -1,7 +1,7 @@
 .Heading {
     text-align: center;
-    padding-bottom: 2rem;
-    font-size: 3.3rem;
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
     color: $grey;
     text-shadow: $box-shadow;
@@ -9,5 +9,9 @@
         text-transform: uppercase;
         color: $main-color;
         text-shadow: $box-shadow;
+    }
+    @media (min-width:780px) {
+        padding-bottom: 2rem;
+        font-size: 3.3rem;
     }
 }
